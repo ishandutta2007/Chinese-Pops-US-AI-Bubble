@@ -32,7 +32,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#d62728",
-    label="Chinese Models Revenue",
+    label="Chinese Models Revenue (DeepSeek, Qwen, etc.)",
 )
 plt.plot(
     df["Date"],
@@ -40,7 +40,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#1f77b4",
-    label="US Models Revenue",
+    label="US Models Revenue (OpenAI, Anthropic, etc.)",
 )
 
 # Annotate the plotted points
