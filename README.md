@@ -56,7 +56,7 @@ The dataset is estimated from **OpenRouter** and various industry reports spanni
 ## 📄 License
 This project is open-source and available under the [MIT License](LICENSE).
 
-## Star History
+## 🌟 Star History
 <div align="center">
 <a href="https://www.star-history.com/?repos=ishandutta2007%2FChinese-Pops-US-AI-Bubble&type=date&legend=bottom-right">
 <picture>
