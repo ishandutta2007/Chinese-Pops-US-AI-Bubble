@@ -2,6 +2,8 @@
 
 An analytical data visualization project comparing weekly AI token volume between Chinese AI models (such as DeepSeek, Qwen) and US AI models (such as OpenAI, Anthropic). This Python-based project highlights key industry trends, including the projected "Crossover Event" in early 2026 where low-cost Chinese models surge in global usage, potentially signaling an AI bubble burst or market shift.
 
+![Weekly AI Token Volume: China vs. US (2025-2026)](assets/plot.png)
+
 ## 🚀 Features
 - **Data Visualization**: Clear, annotated line charts tracking weekly token volume in trillions.
 - **Trend Analysis**: Visually highlights the crossover point between US AI and Chinese AI token usage.

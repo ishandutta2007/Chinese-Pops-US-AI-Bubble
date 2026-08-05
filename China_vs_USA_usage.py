@@ -39,6 +39,14 @@ plt.xlabel('Timeline', fontsize=12)
 plt.legend(fontsize=11)
 plt.grid(True, alpha=0.3)
 
-# Show the plot
+import os
+
+# Create assets folder if it doesn't exist
+os.makedirs('assets', exist_ok=True)
+
+# Save the plot
 plt.tight_layout()
+plt.savefig('assets/plot.png', dpi=300, bbox_inches='tight')
+
+# Show the plot
 plt.show()
