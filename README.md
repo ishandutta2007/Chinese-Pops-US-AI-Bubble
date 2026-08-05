@@ -15,7 +15,7 @@
 
 An analytical data visualization project and AI market analysis tool comparing weekly AI token volume between **Chinese AI models** 🐉 (such as DeepSeek, Qwen, Yi) and **US AI models** 🦅 (such as OpenAI GPT-4, Anthropic Claude). This Python-based data science project highlights key artificial intelligence industry trends, including the projected **"Crossover Event"** ⚔️ in early 2026 where low-cost Chinese Large Language Models (LLMs) surge in global usage, potentially signaling an AI bubble burst or major generative AI market shift 💥.
 
-![Weekly AI Token Volume: China vs. US (2025-2026)](assets/plot.png)
+![Weekly AI Token Volume: China vs. US (2025-2026)](assets/tokens_plot.png)
 
 ![Monthly AI Revenue: China vs. US (2025-2026)](assets/revenue_plot.png)
 
