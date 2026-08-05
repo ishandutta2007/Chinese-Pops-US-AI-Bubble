@@ -14,8 +14,8 @@ data = {
         "Aug-2026",
     ],
     # Estimated weekly token volume in Trillions (T)
-    "China_Volume_T": [0.1, 0.3, 2.5, 8.0, 15.0, 22.0, 28.1],
-    "US_Volume_T": [4.5, 5.0, 6.5, 7.8, 7.5, 6.0, 4.4],
+    "China_Volume_T": [0.15, 0.4, 3.5, 11.2, 21.0, 30.8, 39.3],
+    "US_Volume_T": [6.8, 7.5, 9.8, 11.7, 11.2, 9.0, 6.6],
 }
 
 df = pd.DataFrame(data)
@@ -31,7 +31,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#d62728",
-    label="Chinese Models (DeepSeek, Qwen, etc.)",
+    label="Chinese Models\n(DeepSeek, Qwen, Baidu, Zhipu,\nMiniMax, Moonshot, 01.AI)",
 )
 plt.plot(
     df["Date"],
@@ -39,7 +39,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#1f77b4",
-    label="US Models (OpenAI, Anthropic, etc.)",
+    label="US Models\n(OpenAI, Anthropic, Google,\nMeta, xAI)",
 )
 
 # Annotate the plotted points

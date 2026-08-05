@@ -15,8 +15,8 @@ data = {
         "Aug-2026",
     ],
     # Estimated monthly revenue in Billions (B)
-    "China_Revenue_B": [0.05, 0.08, 0.15, 0.20, 0.30, 0.40, 0.45],
-    "US_Revenue_B": [1.5, 2.0, 2.5, 3.0, 4.5, 6.0, 6.5],
+    "China_Revenue_B": [0.10, 0.16, 0.30, 0.40, 0.60, 0.80, 0.90],
+    "US_Revenue_B": [2.5, 3.2, 4.0, 5.0, 7.5, 10.0, 11.0],
 }
 
 df = pd.DataFrame(data)
@@ -32,7 +32,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#d62728",
-    label="Chinese Models Revenue (DeepSeek, Alibaba Qwen)",
+    label="Chinese Models Revenue\n(DeepSeek, Qwen, Baidu, Zhipu,\nMiniMax, Moonshot, 01.AI)",
 )
 plt.plot(
     df["Date"],
@@ -40,7 +40,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#1f77b4",
-    label="US Models Revenue (OpenAI, Anthropic)",
+    label="US Models Revenue\n(OpenAI, Anthropic, Google,\nMeta, xAI)",
 )
 
 # Annotate the plotted points
