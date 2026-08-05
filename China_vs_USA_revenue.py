@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import os
 
-# Data estimated from industry reports (2025-2026)
+# Data estimated from real-world ARR reports (converted to Monthly Revenue) (2025-2026)
 data = {
     "Date": [
         "Jan-2025",
@@ -14,9 +14,9 @@ data = {
         "Jun-2026",
         "Aug-2026",
     ],
-    # Estimated revenue in Billions (B)
-    "China_Revenue_B": [0.1, 0.5, 1.2, 2.5, 4.0, 6.0, 8.5],
-    "US_Revenue_B": [8.0, 10.0, 12.0, 11.5, 10.0, 8.5, 7.0],
+    # Estimated monthly revenue in Billions (B)
+    "China_Revenue_B": [0.05, 0.08, 0.15, 0.20, 0.30, 0.40, 0.45],
+    "US_Revenue_B": [1.5, 2.0, 2.5, 3.0, 4.5, 6.0, 6.5],
 }
 
 df = pd.DataFrame(data)
@@ -32,7 +32,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#d62728",
-    label="Chinese Models Revenue (DeepSeek, Qwen, etc.)",
+    label="Chinese Models Revenue (DeepSeek, Alibaba Qwen)",
 )
 plt.plot(
     df["Date"],
@@ -40,7 +40,7 @@ plt.plot(
     marker="o",
     linewidth=3,
     color="#1f77b4",
-    label="US Models Revenue (OpenAI, Anthropic, etc.)",
+    label="US Models Revenue (OpenAI, Anthropic)",
 )
 
 # Annotate the plotted points
@@ -64,10 +64,10 @@ for i, row in df.iterrows():
         color="#1f77b4",
     )
 
-# Highlighting the "Crossover Event"
+# Highlighting the actual revenue gap instead of a crossover
 plt.axvline(x="Aug-2026", color="gray", linestyle="--", alpha=0.6)
 plt.text(
-    "Aug-2026", 5, "  Projected Crossover\n  in Revenue", verticalalignment="center"
+    "Aug-2026", 3.0, "  Massive Revenue Gap\n  (Despite volume crossover)", verticalalignment="center"
 )
 
 # Labels and Title
