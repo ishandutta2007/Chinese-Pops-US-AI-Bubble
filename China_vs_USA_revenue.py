@@ -23,7 +23,7 @@ df = pd.DataFrame(data)
 
 # Set the visual style
 sns.set_theme(style="whitegrid")
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(14, 7))
 
 # Plotting
 plt.plot(
@@ -84,7 +84,7 @@ os.makedirs("assets", exist_ok=True)
 
 # Save the plot
 plt.tight_layout()
-plt.savefig("assets/revenue_plot.png", dpi=300, bbox_inches="tight")
+plt.savefig("assets/revenue_plot.png", dpi=400)
 print("Successfully generated assets/revenue_plot.png")
 # Show the plot
 plt.show()
