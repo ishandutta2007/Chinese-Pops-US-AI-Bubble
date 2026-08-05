@@ -88,7 +88,7 @@ os.makedirs("assets", exist_ok=True)
 
 # Save the plot
 plt.tight_layout()
-plt.savefig("assets/plot.png", dpi=400)
+plt.savefig("assets/tokens_plot.png", dpi=400)
 
 # Show the plot
 plt.show()
