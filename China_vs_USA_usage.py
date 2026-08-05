@@ -23,6 +23,11 @@ plt.figure(figsize=(12, 6))
 plt.plot(df['Date'], df['China_Volume_T'], marker='o', linewidth=3, color='#d62728', label='Chinese Models (DeepSeek, Qwen, etc.)')
 plt.plot(df['Date'], df['US_Volume_T'], marker='o', linewidth=3, color='#1f77b4', label='US Models (OpenAI, Anthropic, etc.)')
 
+# Annotate the plotted points
+for i, row in df.iterrows():
+    plt.annotate(f"{row['China_Volume_T']}", (row['Date'], row['China_Volume_T']), textcoords="offset points", xytext=(0,10), ha='center', fontsize=9, color='#d62728')
+    plt.annotate(f"{row['US_Volume_T']}", (row['Date'], row['US_Volume_T']), textcoords="offset points", xytext=(0,10), ha='center', fontsize=9, color='#1f77b4')
+
 # Highlighting the "Crossover Event"
 plt.axvline(x='Feb-2026', color='gray', linestyle='--', alpha=0.6)
 plt.text('Feb-2026', 10, '  The "Crossover"\n  (Low-cost models surge)', verticalalignment='center')
