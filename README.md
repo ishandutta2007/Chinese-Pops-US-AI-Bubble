@@ -51,7 +51,8 @@ python China_vs_USA_revenue.py
 - 📜 `China_vs_USA_usage.py`: The core script that loads the data, formats the graph, and plots the annotated chart for token volume.
 - 📜 `China_vs_USA_revenue.py`: The script for comparing AI model revenue.
 - 🎨 `assets/banner.svg`: Dynamic animated banner for the project.
-- 🖼️ `assets/plot.png`: Generated token volume visualization output.
+- 🎬 `assets/social_preview.gif`: Dynamic animated GIF for GitHub social preview (640x320px, <1MB).
+- 🖼️ `assets/tokens_plot.png`: Generated token volume visualization output.
 - 🖼️ `assets/revenue_plot.png`: Generated revenue visualization output.
 
 ## 📈 Data Context
